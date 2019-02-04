@@ -17,7 +17,7 @@ func main() {
 		//var messages []linebot.Message
 		//leftBtn := linebot.NewMessageAction("left", "left clicked")
 		//rightBtn := linebot.NewMessageAction("right", "right clicked")
-		switch t.Hour(){
+		switch t.Hour() {
 		case 10:
 			group = "桃園兵器保修"
 		case 15:
@@ -29,10 +29,10 @@ func main() {
 		default:
 			group = ""
 		}
-		if (group != ""){
-		text := fmt.Sprintf("現在時間 %d-%02d-%02d %02d:%02d\n %s \n 等等記得回報一下訊息\n 祝大家新年快樂", t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), group)
-		message := linebot.NewTextMessage(text)
-		bot.PushMessage(Roomid, message).Do()
+		if group != "" {
+			text := fmt.Sprintf("現在時間 %d-%02d-%02d %02d:%02d\n %s \n 等等記得回報一下訊息\n 祝大家新年快樂", t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), group)
+			message := linebot.NewTextMessage(text)
+			bot.PushMessage(Roomid, message).Do()
 		}
 		time.Sleep(time.Duration(30 * time.Minute))
 	}

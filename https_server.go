@@ -8,6 +8,7 @@ import (
 	"log"
 	"reflect"
 )
+
 //chatbot_access_token := "84RSL9DoYB7CYToRF/7n38pidk4YqaylvtyULojYQYLSRpyOf7dHIYPGK/GwtrCzXJo0FoaDznyJ+jYiygmWc0azPyO+i1QBlqj2kNobdAoVGhGWQzFmI1pZQ8/F9IxEwLw5Heoofae684hdMDobzAdB04t89/1O/w1cDnyilFU="
 //func PostLineUser(userid string)
 
